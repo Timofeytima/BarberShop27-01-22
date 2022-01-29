@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
 </head>
 <body>
     <header>
@@ -13,10 +13,10 @@
             <img src="./img/logo.svg" alt="логотип сайта">
             </a>
             <ul>
-            <li> <a href="">О нас</a> </li>
-            <li> <a href="">Услуги и цены</a></li>
-            <li> <a href="">Мастера</a></li>
-            <li> <a href="">Контакты</a></li>
+            <li> <a href="#about">О нас</a> </li>
+            <li> <a href="#prices">Услуги и цены</a></li>
+            <li> <a href="#masters">Мастера</a></li>
+            <li> <a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
 
@@ -38,7 +38,7 @@
             
         </section>
 
-        <section>
+        <section id="about">
             <ul>
                 <li><a href=""> <img src="./img/img_1.jpg" alt=" бритье бороды" width="270" height="445"></a></li>
                 <li><a href=""> <img src="./img/img_2.jpg" alt="бритье затылка" width="270" height="445"></a></li>
@@ -54,7 +54,7 @@
 
             <button type="button">Онлайн запись</button>
         </section>
-        <section>
+        <section id="prices">
             <p>Проведи время в компании лучших мастеров</p>
             <h2>Услуги и цены</h2>
             <div>
@@ -102,50 +102,54 @@
         <section>
             <ul>
                 <li>
-                    <p>600</p>
+                    <span>600</span>
                     <p>Довольных клиентов в день</p>
-                    <p>+</p>
+                    
                 </li>
                 <li>
-                    <p>20</p>
-                    <p>Лучших мастеров Киева</p>
-                    <p>+</p>
-                </li>
-                <li>
-                    <p>50</p>
+                    <span>50</span>
                     <p>Наград за отличный сервис</p>
-                    <p>+</p>
+                    
                 </li>
                 <li>
-                    <p>100</p>
+                    <span>20</span>
+                    <p>Лучших мастеров Киева</p>
+                    
+                </li>
+               
+                <li>
+                    <span>100</span>
                     <p>Подарков постоянным клиентам</p>
-                    <p>+</p>
+                    
                 </li>
             </ul>
             <p>старая традиционная школа</p>
-            <h3>Почему приходят именно к нам?</h3>
+            <h2>Почему приходят именно к нам?</h2>
             <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
 
         </section>
-        <section>
+        <section id="masters">
             <p>для настоящих ценителей атмосферы</p>
-            <h3>Наши мастера</h3>
+            <h2>Наши мастера</h2>
             <ul>
                 <li>
-                    <a href=""> <img src="./img/img_3.jpg" alt="John Smith" width="370" height="346"></a>
-                        <p lang="en">John Smith</p>
+                     <img src="./img/img_3.jpg" 
+                    alt="John Smith" 
+                    width="370"
+                    height="346">
+                        <h3 lang="en">John Smith</h3>
+                        <p lang="en">Extreme Barber</p>
+                                            
+                </li>
+                <li>
+                    <img src="./img/img_4.jpg" alt="Michele Doe" width="370" height="346">
+                        <h3 lang="en">Michele Doe</h3>
                         <p lang="en">Extreme Barber</p>
                     
                 </li>
                 <li>
-                    <a href=""><img src="./img/img_4.jpg" alt="Michele Doe" width="370" height="346"></a>
-                        <p lang="en">Michele Doe</p>
-                        <p>Extreme Barber</p>
-                    
-                </li>
-                <li>
-                    <a href=""><img src="./img/img_5.jpg" alt="">Alan Black</a>
-                        <p lang="en">Alan Black</p>
+                    <img src="./img/img_5.jpg" alt="Alan Black" width="370" height="346">
+                        <h3 lang="en">Alan Black</h3>
                         <p lang="en">Extreme Barber</p>
                     
                 </li>
@@ -153,19 +157,44 @@
             <!-- Кнопки перехода по ссылкам-->
         </section>
         <section>
-            <h3>На латинском языке “барба” означает “борода”</h3>
+            <p>На латинском языке “барба” означает “борода”</p>
+            <h2 hidden> Галерея</h2>
+            
             <ul>
-                <li><a href=""><img src="./img/rectangle_25.jpg" alt="работает машинкой" width="270" height="360"></a></li>
-                <li><a href=""><img src="./img/rectangle_26.jpg" alt="работает мазком" width="270" height="360"></a></li>
-                <li><a href=""><img src="./img/rectangle_27.jpg" alt="накрывает полотенцем" width="270" height="360"></a></li>
-                <li><a href=""><img src="./img/rectangle_28.jpg" alt="бреет затылок" width="270" height="360"></a></li>
+                <li><img src="./img/rectangle_25.jpg" alt="работает машинкой" width="270" height="360"></li>
+                <li><img src="./img/rectangle_26.jpg" alt="работает мазком" width="270" height="360"></li>
+                <li><img src="./img/rectangle_27.jpg" alt="накрывает полотенцем" width="270" height="360"></li>
+                <li><img src="./img/rectangle_28.jpg" alt="бреет затылок" width="270" height="360"></li>
             </ul>
         </section>
-        <!-- Последяя секция-->
+        <!-- Последяя секция /левая -->
         <section>
             <div>
-                <h3>Онлайн-запись</h3>
+                <h2>Онлайн-запись</h2>
             </div>
+
+        </section>
+        <!-- Последняя секция/ правая-->
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <address>
+                <ul>
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer">ул. Васильковая, 7АКиев, 08132</a>
+                </li>
+                <li>
+                    <a href="+380441111111">+38 044 111 11 11</a>
+                </li>
+                <li>
+                    <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+                </li>
+                </ul>
+            </address>
+            <b>время работы</b>
+            <p>Ежедневно с 9:00 до 22:00</p>
+
+       
+
 
 
         </section>
@@ -176,7 +205,7 @@
 
     </main>
     <footer>
-        <p lang="en">Copyright 2020</p>
+        <p lang="en"> &copy;:Copyright 2020</p>
         <ul>
             <li><a href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
